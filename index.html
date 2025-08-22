@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D'napoles Pizzaria • O verdadeiro sabor!</title>
+  <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+  <style>
+    :root {
+      --bg-a:#ff7a2f;
+      --bg-b:#e7353f;
+      --text:#fff;
+      --whats:#1f9d47;
+      --phone:#3c82f6;
+      --addr:#8b5cf6;
+      --inst:linear-gradient(90deg,#fd1d1d,#fcb045);
+    }
+    body {
+      margin:0; height:100vh; display:grid; place-items:center;
+      background:linear-gradient(135deg,var(--bg-a),var(--bg-b));
+      font-family:sans-serif; color:var(--text);
+    }
+    .wrap { text-align:center; }
+    .logo {
+      width:80%; max-width:300px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-8px)}
+    }
+    h1 { font-size:1.8rem; margin:1rem 0; }
+
+    .stack { display:grid; gap:14px; width:90%; max-width:400px; margin:0 auto; }
+
+    .btn {
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      text-decoration:none; color:#fff; font-weight:bold;
+      padding:16px; border-radius:12px;
+      border:2px solid rgba(255,255,255,0.5); /* borda clara */
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05); /* cresce um pouco */
+      box-shadow:0 6px 20px rgba(0,0,0,0.2);
+    }
+    .btn svg { width:18px; height:18px; }
+
+    .whats { background:var(--whats); }
+    .phone { background:var(--phone); padding:12px; }
+    .addr { background:var(--addr); padding:12px; }
+    .insta { background:var(--inst); padding:12px; }
+
+    footer { margin-top:20px; font-size:12px; color:#ffffffcc; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="logo.png" alt="Logo D'napoles Pizzaria">
+    <h1>O verdadeiro sabor!</h1>
+    <nav class="stack">
+      <a class="btn whats" href="https://wa.me/5569992922202?text=Olá,+boa+noite,+gostaria+de+ver+o+cardápio" target="_blank" rel="noopener"> <!-- link do WhatsApp --> 
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.3c-.27-.14-1.6-.79-1.84-.88-.24-.09-.42-.14-.6.14-.18.27-.69.88-.85 1.06-.16.18-.31.2-.58.07-.27-.14-1.12-.41-2.14-1.31-.79-.7-1.33-1.56-1.49-1.82-.16-.27-.02-.41.12-.55.12-.12.27-.31.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.6-1.45-.83-1.99-.22-.53-.45-.46-.6-.47l-.51-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3s.98 2.67 1.12 2.86c.14.18 1.93 2.95 4.68 4.03.65.28 1.15.44 1.54.56.65.21 1.23.18 1.69.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32zM12.04 2C6.99 2 2.89 6.11 2.89 11.15c0 1.61.42 3.22 1.22 4.64L2 22l6.39-2c1.38.76 2.94 1.16 4.55 1.16 5.05 0 9.15-4.11 9.15-9.15C22.09 6.11 17.09 2 12.04 2z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn phone" href="tel:556934212001" target="_blank" rel="noopener"> <!-- telefone -->
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C11.3 21 3 12.7 3 2a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.12.33.04.7-.22.96l-2.23 2.26z"/></svg>
+        Telefone
+      </a>
+      <a class="btn addr" href="https://maps.app.goo.gl/oVUPxFXpkJqFeiMB8?g_st=aw" target="_blank" rel="noopener"> <!-- endereço -->
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+        Endereço
+      </a>
+      <a class="btn insta" href="https://www.instagram.com/dnapoles.pizzaria?igsh=MXZmamdpMWZwYnExdg==" target="_blank" rel="noopener"> <!-- instagram -->
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.3.07 2 .28 2.46.46.62.24 1.06.53 1.52.99.46.46.75.9.99 1.52.18.46.39 1.16.46 2.46.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.07 1.3-.28 2-.46 2.46-.24.62-.53 1.06-.99 1.52a3.7 3.7 0 01-1.52.99c-.46.18-1.16.39-2.46.46-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.3-.07-2-.28-2.46-.46a3.7 3.7 0 01-1.52-.99 3.7 3.7 0 01-.99-1.52c-.18-.46-.39-1.16-.46-2.46C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.07-1.3.28-2 .46-2.46.24-.62.53-1.06.99-1.52.46-.46.9-.75 1.52-.99.46-.18 1.16-.39 2.46-.46C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.16 0-3.53 0-4.77.07-1.15.06-1.77.24-2.18.4-.55.21-.95.46-1.36.87-.41.41-.66.81-.87 1.36-.16.41-.33 1.03-.4 2.18C2.35 10.47 2.3 10.84 2.3 14s.05 3.53.12 4.77c.06 1.15.24 1.77.4 2.18.21.55.46.95.87 1.36.41.41.81.66 1.36.87.41.16 1.03.33 2.18.4 1.24.07 1.61.12 4.77.12s3.53-.05 4.77-.12c1.15-.06 1.77-.24 2.18-.4.55-.21.95-.46 1.36-.87.41-.41.66-.81.87-1.36.16-.41.33-1.03.4-2.18.07-1.24.12-1.61.12-4.77s-.05-3.53-.12-4.77c-.06-1.15-.24-1.77-.4-2.18a3.1 3.1 0 00-.87-1.36 3.1 3.1 0 00-1.36-.87c-.41-.16-1.03-.33-2.18-.4C15.53 4 15.16 3.95 12 3.95zm0 2.85a5.2 5.2 0 110 10.4 5.2 5.2 0 010-10.4zm5.4-2.2a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+        Instagram
+      </a>
+    </nav>
+    <footer>D'napoles Pizzaria • Todos os direitos reservados</footer>
+  </main>
+</body>
+</html>
